@@ -1,0 +1,128 @@
+.topnav {
+background-color: #eeeeee;
+width: 100%;
+}
+.topnav a {
+color: #000000;
+text-align: center;
+margin-right: 25px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a.active{
+color: #008CBA;
+}
+
+/* -------------------- */
+
+.linkStyle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+#link1 {
+    background-color: #90EE90;
+}
+
+#link2 {
+    background-color: #333333; 
+}
+
+#link3 {
+    background-color: black; 
+}
+
+
+.link-style:hover {
+    background-color: #555555; 
+}
+
+
+.link-style:visited {
+    color: #FFD700; 
+}
+
+
+.link-style:active {
+    background-color: #FF4500; 
+}
+
+
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light grey background */
+}
+
+/* Container for the content */
+.content-container {
+    background-color: #e0e9e9; /* Light teal background */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the header */
+.header-title {
+    background-color: #5f9ea0; /* Cadet blue background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top of the container */
+}
+
+/* Styling for the list of features */
+.feature-list {
+    margin: 20px 0 0 20px; /* Space above and indentation for the list */
+    line-height: 1.6; /* Spacing between list items */
+}
+
+.feature-list ul, .feature-list ol {
+    margin: 10px 0 0 20px; /* Indentation for nested lists */
+}
+
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust for desired size */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Optional border */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor for interactivity */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

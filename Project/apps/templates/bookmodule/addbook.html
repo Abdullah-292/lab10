@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add book</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<h3>Adding a new Book</h3>
+<form method = "POST">
+{% csrf_token %}
+<label for="title">Title</label>
+<input type="text" id ="title" name="title" />
+<br>
+<label for="author">Author</label>
+<input type="text" id ="title" name="author" />
+<br>
+<label for="price">Price (with decimal point)</label>
+<input type="number" step='any' id="price" name="price" />
+<br>
+<label for="edition">Edition</label>
+<input type="number" id="edition" name="edition" />
+<br>
+<button type="submit" >Add Book</button>
+</form>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Count by City</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+<body>
+    <h1>Number of Students in Each City</h1>
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Number of Students</th>
+        </tr>
+        {% for city_count in city_counts %}
+        <tr>
+            <td>{{ city_count.adress__city }}</td>
+            <td>{{ city_count.num_students }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="2">No records found.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

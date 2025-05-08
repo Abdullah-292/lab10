@@ -1,0 +1,32 @@
+
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Show one Book</title>
+    <meta name="keywords" content="Books, recent, Learning, library">
+    <meta name="description" content="Books website">
+    <meta name="author" content="author name">
+    <link rel="icon" href="qu-icon.png">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <a href="{% url "books.list_books" %}">Go Back</a> <!-- URL template tag -->
+
+    <h1>Details of Book1</h1>
+    <h2>Agorithm abd analysis design</h2>
+    <h2>Author: author name</h2>
+    <p><strong> Internet & World Wide Web How to Program, 5/e </strong> provides a
+        clear, simple, engaging and entertaining introduction to Internet and web
+        programming. It’s appropriate for both introductory and intermediate-level client-
+        side and server-side programming courses.</p>
+        <a href="{% url "books.view_one_book" %}"><img src="{% static 'book1.jpg'  %}" alt="Book1 img desc" width="200" height="200"></a>
+</body>
+
+</html>
+
+{% endblock content %}

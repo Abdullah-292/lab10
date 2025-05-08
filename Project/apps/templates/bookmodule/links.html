@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Customization</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- static template tag -->
+</head>
+<body>
+    <div class="link-container">
+        <a href="https://www.qu.edu.sa" target="_blank" class="linkStyle" id="link1">Go to QU website (open a new tab)</a>
+        <a href="https://www.qu.edu.sa" target="_self" class="linkStyle" id="link2">Go to QU website (open in the same page/tab)</a>
+        <a href="https://www.qu.edu.sa" target="_self" class="linkStyle" id="link3">Go to QU website (open in the same page/tab)</a>
+    </div>
+</body>
+</html>

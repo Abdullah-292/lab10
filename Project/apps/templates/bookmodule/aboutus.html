@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <meta name="keywords" content="Books, recent, Learning, library">
+    <meta name="description" content="Books website">
+    <meta name="author" content="author name">
+    <link rel="icon" href="qu-icon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- static template tag -->
+
+</head>
+
+<body>
+        <div class="topnav"> <!-- add class attribute -->
+        <a class="active" href="{% url "books.index" %}">Home</a> <!-- URL template tag-->
+        <a href="{% url "books.list_books" %}">List Books</a> <!-- URL template tag -->
+        <a href="{% url "books.aboutus" %}">About</a> <!-- URL template tag -->
+         </div>
+    <h1>About us</h1>
+    <p>This is a paragraph text This is a paragraph text This is a paragraph text
+        This is a paragraph text </p>
+    <p>To write to <a href="mailto:email@domain.com">our store</a>, click the link
+        and your default email client will open an email message and address it to us. </p>
+</body>
+
+</html>

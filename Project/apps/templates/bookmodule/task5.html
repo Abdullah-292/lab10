@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Number of books </th>
+            <th>Total price of all books </th>
+            <th>Average price</th>
+            <th>Maximum price</th>
+            <th>Minimum  price</th>
+        </tr>
+        <tr>
+            <td>{{books.total_books}}</td>
+            <td>{{books.total_price}}</td>
+            <td>{{books.avg_price}}</td>
+            <td>{{books.max_price}}</td>
+            <td>{{books.min_price}}</td>
+
+        </tr>
+
+    </table>
+    
+</body>
+</html>

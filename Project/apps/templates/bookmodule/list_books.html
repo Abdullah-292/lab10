@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>List of Books</title>
+    <meta name="keywords" content="Books, recent, Learning, library">
+    <meta name="description" content="Books website">
+    <meta name="author" content="author name">
+    <link rel="icon" href="qu-icon.png">
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- static template tag -->
+
+    <meta charset="UTF-8">
+
+
+
+</head>
+
+<body>
+    <div class="topnav"> <!-- add class attribute -->
+        <div class="topnav"> <!-- add class attribute -->
+        <a class="active" href="{% url "books.index" %}">Home</a> <!-- URL template tag-->
+        <a href="{% url "books.list_books" %}">List Books</a> <!-- URL template tag -->
+        <a href="{% url "books.aboutus" %}">About</a> <!-- URL template tag -->
+    </div>
+
+    <h1>List of Books</h1>
+    
+    <a href="{% url "books.view_one_book" %}">
+        <h2>Agorithm abd analysis design</h2>
+    </a>
+    <a href="{% url "books.view_one_book" %}"><img src="{% static 'book1.jpg'  %}" alt="Book1 img desc" width="200" height="200"></a>
+   
+    <hr>
+
+    <h2>2) Data Structure</h2>
+    <img src="{% static 'book2.jpg'  %}" alt="Book2 img desc" width="200" height="200">
+    <hr>
+    <h2>3) Machine Learning</h2>
+    <img src="{% static 'book3.jpg'  %}" alt="Book3 img desc" width="200" height="200">
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Books</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <a href="{%url 'books.addbook'%}" class="button" >Add book</a>
+    <br>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Edition</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            
+        </tr>
+
+        {% for book in books  %}
+            <tr>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.price}}</td>
+                <td>{{book.edition}}</td>
+                <td><a href="{% url 'books.editbook' book.id %}" class="button" >Edit</a></td>
+                <td><a href="{% url 'books.editBookByForm' book.id %}" class="button" >Edit FORM</a></td>
+                <td><a href="{% url 'books.deleteBook' book.id %}"  class="button" >Delete</a></td>
+
+            </tr>
+        {% endfor %}
+    </table>
+</body>
